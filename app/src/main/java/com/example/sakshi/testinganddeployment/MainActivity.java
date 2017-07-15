@@ -28,18 +28,23 @@ public class MainActivity extends AppCompatActivity {
     public boolean checkemail( String test){
 
         if(test.contains("@gmail.com")){
+            //returns true if the string has @gmail.com in it
             return true;
         }
-        else
+        else{
+            //it returns false if not
             return false;
+        }
     }
     public boolean checkpassword(String test){
         if(test.contains("123#")){
+         //returns true if the password contains 123# in it   
             return true;
         }
-        else
+        else{
+            //returns false if not
             return false;
-
+        }
     }
 
 }
