@@ -16,15 +16,16 @@ public class MainActivityTest extends TestCase {
 
     @Test
     public void testemailvalidator(){
-
+        //creating main activity's object
         MainActivity main = new MainActivity();
-
+        //checking result in the checkemail method in MainActivity
         boolean result = main.checkemail("name@gmail.com");
         assertEquals(true,result);
     }
     @Test
     public void testpasswordvalidator(){
         MainActivity main = new MainActivity();
+        //checking result in the checkpassword method in MainActivity
         boolean result = main.checkpassword("acadgild123#");
         assertEquals(true,result);
 
